@@ -1,0 +1,737 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import 'media-queries';
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+#home
+
+{
+  height: 700px;
+  background:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(../img/1.jpg);
+  background-size: cover;
+}
+
+header{
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px 40px; 
+    line-height: 44px;
+    text-align: center;
+    font-weight: 500;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    height: 70px;
+    
+    
+
+
+}
+
+
+
+.logo h1{
+    color: #FFF;
+    margin: 0px;
+}
+.logo span{
+    color: #70e9f1;
+}
+
+//saujanya added nav style
+
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    top:0.8rem;
+    
+    
+}
+
+nav ul
+{
+    list-style: none;
+  
+}
+	
+	
+nav ul li{
+    display: inline;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    color: #fff;
+	padding:20px;
+	font-size: 16px;
+    font-weight: bold;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+nav li:hover a{
+   
+    color:#70e9f1;
+    text-decoration: none;}
+   
+    .btn
+    {
+        background-color: #70e9f1;
+        padding: 10px 18px;
+        border-radius: 18px;        
+        display: inline-block;
+        line-height: 16px;
+        font-weight: 500;      
+    }
+.btn a
+{
+    font-weight: 500;
+	font-size: 14px;
+	color: #3e3e3e;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+.btn:hover {
+    cursor: pointer;
+    background-color:white;
+   
+}
+
+//saujanya added contact button style
+#contact_btn
+{
+  
+    position:relative;
+    top:0.5rem;
+    right:2.3rem;
+  
+}
+
+//saujanya changed padding from 150px to 180px
+.inner-header
+{
+
+  padding: 180px 300px;
+  text-align:center;
+    
+  
+   
+   
+}
+
+//font-size 40 px changed to 3px by saujanya raj shrestha
+.inner-header h1
+{
+   text-align: center;
+    color :white;
+    font-weight: 500;
+    line-height: 44px;
+    font-size: 35px;
+}
+
+//height changed from 1000px to 100%
+#product
+{
+    height: 100%;
+    background: #eeeeee;
+    max-width:100vw;
+    padding-bottom:5%;
+    
+
+}
+#product p{
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    padding: 70px 0px;;
+}
+
+.col{
+  
+    display: flex;
+    flex-direction:row;
+    flex-flow:wrap;
+    justify-content: space-around;
+    
+    
+   
+ }
+
+ //saujanya added width and height and margin-bottom
+ 
+ .card{
+     display:flex;
+     flex-direction:column;
+     justify-content: center;
+     align-items: center;
+     max-height: 546px;
+     max-width: 302.5px;
+     margin-bottom:5%;
+     position:relative;
+    z-index:2;
+
+     
+      }
+
+      .card .hovs{
+          display:flex;
+          justify-content: center;
+          align-items: center;
+      }
+      .card:hover .hovs{
+          position:absolute;
+          height:100%;
+          width:100%;
+          top:0; 
+          left:0;
+          background-color:black;
+          opacity:0.9;
+          transition:0.9s;
+       
+          
+          
+      }
+
+      .card .hovs p{
+          display:none;
+          color:white;
+          
+      }
+
+      .card:hover .hovs p{
+         
+          display:block;
+          color:white;
+      }
+ 
+
+
+
+
+
+
+
+
+//width changed to 80% by saujanya which was 300px along with display:flex 
+.des-new
+{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    max-width: 80%;
+    
+    // float: left;
+    // padding: 0px 15px;
+    
+}
+ .des-new h2
+ {
+font-size: 20px;
+padding: 0px 18px;
+color: black;
+
+
+ }
+ .des-new p
+ {
+ 	font-size:10px;
+     float: left;
+ 	
+
+ }
+
+ //saujanya changed height and width to max-height and max-width
+ 
+ .logo1 img{
+    height: 194px;
+    width: 300px;
+    position:relative;
+    object-fit: contain;
+    
+ }
+
+ 
+     
+
+
+.box{
+    padding: 20px;
+}
+.box h5{
+    font: bold;
+}
+.box ul
+{
+	list-style:none;
+}
+.box ul li
+{
+	display: block;
+    line-height: 2;
+}
+
+#discount
+{
+   
+    // width:100vw;
+    height: 625px;
+    background-color:black;
+    display:flex;
+    flex-direction:row;
+
+}
+
+//added max-width along with margin and removed padding
+.d1
+{
+    
+  
+    text-align: center;
+    max-width: 50%;
+    margin: 50px auto;
+  
+}
+.d1 h1
+{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+     margin-top:200px; 
+}
+.d1 p
+{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+   
+}
+
+.vector img
+{
+   
+//    float: left;
+   height: 625px;
+   max-width: 100%;
+
+}
+
+
+#said
+{
+max-height: 600px;
+background-color: #373A40;
+
+}
+.name
+{
+    font-size: 48px;
+    text-align: center;
+    padding: 70px;
+    color: white;
+    font-weight: 500;
+}
+#said p
+{
+    text-align: center;
+    color: white;
+    font: 500;
+    font-size: 25px;
+}
+#said h5
+{
+    padding: 40px;
+    text-align: center;color: white;
+}
+#said span{
+    color: red;
+}
+
+//height changed to 100vh
+.grid
+{
+  
+    max-height: 100vh;
+    background-color:#eeeeee ;
+}
+
+.gomore img{
+    max-width: 100%;
+    padding: 60px;
+    
+    
+}
+
+//height changed to max-height and margin added
+.blog
+{
+    padding:10% 0;
+    max-height: 1000px;
+    background-color: #eeeeee;
+}
+.blog p 
+{
+    text-align: center;
+    font-size: 30px;
+}
+
+//padding removed and flex-wrap added and justify-content changed to space-evenly
+.row1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+ }
+ .des-new1{
+     padding: 10px;
+     z-index:3;
+ }
+ 
+ .des-new1 p
+ {
+    padding: 20px;
+ 	font-size: 18px;
+ 	text-align:justify;
+
+ }
+ .fixed-bar{
+    
+    
+    background: #373a40;
+    transition: 0.9s;
+    border-bottom: 1px solid #828282;
+    
+   
+    height: 20px;
+    
+
+
+     padding: 30px 30px;
+ }
+ 
+  .fixed-bar  nav ul li a
+ {
+    
+padding: 10px 25px;
+font-size: 13px;
+ }
+
+ .fixed-bar .logo h1{
+     font-size: 25px;
+ }
+ .fixed-bar .btn--new-btn1
+ {
+ 
+    padding: 5px 10px;
+    border-radius: 15px; 
+ }
+ 
+ .card1{
+    
+  
+     width: 335px;
+     margin-top:5%;
+     
+     border: 1px solid rgba(209, 208, 208, 0.432);
+     position: relative;
+ }
+
+
+//saujanya added max-width and max-height
+ .card1 img{
+ 
+    max-height:194px;
+    width:100%;
+    object-fit: cover;
+    
+ }
+ footer{
+    margin-top:5%;
+    background-color:  #373A40;
+    max-width:100%;
+    
+ }
+ .banner
+ {
+
+     text-align: center;
+     padding:50px;
+     
+ }   
+
+//container design added
+ .banner .container{
+    
+     display:flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .banner h1 
+ {
+     color: black;
+ }
+ .banner span{
+     color: red;
+ 
+ }
+footer .banner p{
+    color: white;
+    line-height: 20px;
+  margin: 30px;
+  font-weight: 500;
+}
+
+
+.btn--new-btn2
+{
+    margin-top: 20px;
+}
+
+.btn--new-btn3
+{
+   margin-top: 20px;
+}
+
+.btn--new-btn4
+{
+    
+    font-weight: bold;
+}
+
+//saujanya uncommented the design
+.btn--new-btn5
+{
+    margin-bottom: 30px;
+    max-width:100%;
+}
+
+.menu-toggle
+{
+  display:none;
+}
+
+
+
+@include tablet{
+
+    // #home{
+    //     width:100vw;
+    // }
+
+
+    header{
+    
+        width:100vw;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        
+       
+    }
+
+    nav{
+        display:none;
+    }
+
+  
+    #contact_btn
+    {
+        display: none;
+    }
+
+
+    .menu-toggle
+    {
+        // border:solid 1px red;
+        width:0%;
+        position:absolute;
+        top:2.4rem;
+        right:6.5rem;
+        display:inline;
+    
+    }
+    .menu-toggle .bar
+    {
+        
+        width:25px;
+        height:3px;
+        margin:5px auto;
+        transition: all 0.3s ease-in-out;
+        background:white;
+        display: block;
+    
+    }
+
+    .fixed-bar .logo h1{
+        font-size: 20px;
+    }
+
+   .inner-header{
+    //    border:solid 2px red;
+       position:absolute;
+       top:10rem;
+       padding:80px;
+
+     
+   }
+
+   #product{
+       display:flex;
+       flex-direction:column;
+
+   }
+
+   .logo1 img{
+    height: 194px;
+    width: 300px;
+    position:relative;
+    object-fit: contain;
+    
+ }
+
+ .name{
+     font-size:35px;
+ }
+
+ #said p{
+     font-size:20px;
+ }
+
+ .blog
+{
+    padding:0;
+   
+}
+
+ .blog p 
+{
+   
+    font-size: 20px;
+}
+
+}
+
+.banner h1 
+{
+    font-size:25px;
+}
+.banner span{
+    font-size: 25px;
+    color: red;
+
+}
+
+.des-new1 p
+{
+    
+    font-size: 15px;
+    
+
+}
+
+
+@include mobile
+{
+
+   
+
+    
+    header{
+        width:100vw;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        
+       
+    }
+
+    .menu-toggle
+    {
+    
+        
+        width:0%;
+        position:absolute;
+        top:2.6rem;
+        right:4rem;
+        display:inline;
+
+    
+    }
+    .menu-toggle .bar
+    {
+        
+        width:20px;
+        height:2px;
+        margin:5px auto;
+        transition: all 0.3s ease-in-out;
+        background:white;
+        display: block;
+    
+        
+        
+    }
+    .logo{
+        
+
+        & h1{
+            font-size: 25px;
+        }
+    }
+
+    .inner-header{
+        
+           position:absolute;
+           top:5rem;
+           padding:80px;
+
+           & h1{
+            font-size:30px;
+        }
+ 
+        & h3{
+            font-size:20px;
+        }
+       }
+
+
+       .name{
+        font-size:25px;
+    }
+   
+        #said p{
+            font-size:12px;
+        }
+
+
+        .blog p 
+        {
+            font-size: 12px;
+        }
+ 
+}
+
+
